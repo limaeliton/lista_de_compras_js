@@ -1,6 +1,7 @@
 const cardNovalista = document.getElementById('cardNovalista')
 const btnformnovalista = document.getElementById('btnnovalista')
 const formnovalista = document.getElementById('novalista')
+
 const listas = []
 
 btnnovalista.addEventListener('click', function() {
@@ -10,10 +11,10 @@ btnnovalista.addEventListener('click', function() {
 formnovalista.addEventListener('submit', function(event) {
     event.preventDefault()
 const inputtitulo = querySelector('input[name="tituloLista"]')
-if(inputtitulo.value !== "") {
+if(inputtitulo.value !== '') {
 const novalista = {
 id: listas.length + 1,
-titulo: inputtitulo.value
+titulo: inputtitulo.value 
 }
 inputtitulo.value = ''
 listas.push(novalista)
@@ -22,7 +23,7 @@ window.localStorage.listas = json.stringify(listas)
 console.log(listas)
     
 })
-formnovalista.addEventListener('submit', function(event) {
+formnovalista.addEventListener('reset', function(event) {
     cardNovalista.stlyle.display = "nome"
     
 })
