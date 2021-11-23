@@ -1,4 +1,8 @@
 #cardNovalista{
  display: none;   
  }
- 
+ .cardNovalista{
+     width: 90vw;
+     border: 1px solid #ccc;
+     margin: 1 em auto;
+ }
